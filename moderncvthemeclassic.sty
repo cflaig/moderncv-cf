@@ -149,6 +149,8 @@
     \ifthenelse{\isundefined{\@fax}}{}{\maketitledetailsnewline\faxsymbol~\@fax}%
     \ifthenelse{\isundefined{\@email}}{}{\maketitledetailsnewline\emailsymbol~\emaillink{\@email}}%
     \ifthenelse{\isundefined{\@homepage}}{}{\maketitledetailsnewline\homepagesymbol~\httplink{\@homepage}}%
+    \ifthenelse{\isundefined{\@birthdate}}{}{\maketitledetailsnewline\birthdatesymbol~\@birthdate}%
+    \ifthenelse{\isundefined{\@citizenship}}{}{\maketitledetailsnewline\citizensymbol~\@citizenship}%
     \ifthenelse{\isundefined{\@extrainfo}}{}{\maketitledetailsnewline\@extrainfo}%
   \end{minipage}%
   % optional photo
